@@ -1,0 +1,29 @@
+$accentColor: rgb(200, 0, 0);
+
+.navLogo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navMenu {
+  display: flex;
+  justify-content: 'space-evenly';
+  list-style: none;
+}
+
+.navMenu li {
+  margin: 0px 5px;
+}
+
+.resumeButton {
+  color: $accentColor;
+  background-color: transparent;
+  border: 1px solid $accentColor;
+  padding: 0px 5px;
+  border-radius: 5px;
+  /* line-height: 1; */
+  margin: 0 20px 20px 10px;
+  text-decoration: none;
+}
+
