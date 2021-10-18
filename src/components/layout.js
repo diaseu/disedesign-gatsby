@@ -3,8 +3,10 @@ import PropTypes from "prop-types"
 // import { useStaticQuery, graphql } from "gatsby"
 
 // import Header from "./header"
+import "../styles/index.scss"
+import "../styles/style.scss"
 import Menu from "./menu"
-import "./layout.css"
+import Socialmedia from "./socialmedia"
 
 const Layout = ({ children }) => {
   // const data = useStaticQuery(graphql`
@@ -22,14 +24,9 @@ const Layout = ({ children }) => {
       {/* <Header siteTitle={data.site.siteMetadata?.title || `Title`} /> */}
       {/* <Navbar /> */}
       <Menu />
-      <div
-        style={{
-          margin: `0 auto`,
-          maxWidth: 960,
-          padding: `0 1.0875rem 1.45rem`,
-        }}
-      >
+      <div id="content">
         <main>{children}</main>
+        <Socialmedia />
         {/* <footer
           style={{
             marginTop: `2rem`,

@@ -1,0 +1,35 @@
+$primaryColor: #fff;
+$accentColor: rgb(23, 228, 255);
+$accentColor2: rgb(137, 201, 209);
+$backgroundColor: rgba(20,20,20,1);
+
+@mixin flexBetween {
+  display: flex;
+  justify-content: space-between;
+}
+
+@mixin flexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin navLink {
+  color: $primaryColor; 
+  font-size: 13px;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+@mixin heading {
+  color: $accentColor;
+  font-family: 'Josefin Sans', sans-serif;
+  text-transform: uppercase;
+  margin-left: -3rem;
+}
+
+.hidden {
+  display: none;
+}

@@ -1,0 +1,69 @@
+@import "./variables";
+
+header {
+  @include flexBetween();
+  align-items: center;
+  position: fixed;
+  top: 0px;
+  z-index: 11;
+  padding: 0 50px;
+  width: 100%;
+}
+
+.menu {
+  @include flexBetween();
+
+  background-color: $backgroundColor;  
+}
+
+.logo {
+  @include flexCenter();
+
+  // fill: $accentColor;
+  // svg {
+  //   fill: $accentColor;
+  // }
+  .navlogo {
+    width: 50px;
+    fill: #fff;
+    font-size: 8px;
+  }
+}
+
+.nav {
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 2vh;
+}
+
+.navMenu {
+  display: flex;
+  justify-content: 'space-evenly';
+  list-style: none;
+  li {
+    margin: 0px 15px;
+    // color: $primaryColor;
+  }
+  a {
+    @include navLink();   
+    &:hover {
+      color: $accentColor;
+    }
+  }
+}
+
+.resumeButton {
+  @include navLink();
+  background-color: transparent;
+  border: 1px solid $accentColor;
+  padding: 0.75rem 1rem;
+  border-radius: 5px;
+  line-height: 1;
+  margin-left: 15px ;
+  text-decoration: none;
+  &:hover {
+    // background-color: rgba(200,200,200,0.85);
+    color: $accentColor;
+  }
+}
+

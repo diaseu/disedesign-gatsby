@@ -1,0 +1,128 @@
+@import "./variables";
+
+/* General */
+body {
+  font-family: 'Lato', sans-serif;
+  background-color: $backgroundColor!important;
+  color: $primaryColor!important;
+  overflow-y: hidden;
+  &::-webkit-scrollbar {
+  display: none;
+  }
+}
+
+main {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 960px;
+  min-height: 100vh;
+  padding: 0 1.0875rem 1.45rem;
+}
+
+section {
+  @include flexCenter();
+  flex-direction: column;
+  align-items: flex-start;
+  min-height: 100vh;
+  padding: 0px;
+
+}
+
+// Easy Format
+
+.center {
+  @include flexCenter();
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  border-radius: 2x;
+  margin-bottom: 5vh;
+  &:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  .container {
+    padding: 2px 16px;
+  }
+  img {
+    border-radius: 2px 2px 0 0;
+  }
+}
+
+.dark {
+  background-color: rgba(20,20,20, 0.85);
+  color: #fff;
+  border: none;
+}
+
+
+// Override styles
+
+h1 {
+  @include heading();
+  font-size: 4rem;
+  small {
+    color: $accentColor2;
+    font-size: 0.75rem;
+  }
+}
+
+h2 {
+  @include heading();
+  font-size: 2.5rem;
+  small {
+    color: $accentColor2;
+    font-size: 0.75rem;
+  }
+}
+
+h3 {
+  color: $accentColor2;
+}
+
+p {
+  font-size: 14px;
+  font-family: 'Lato', sans-serif;
+  max-width: 600px;
+}
+
+a {
+  color: $accentColor;
+}
+
+small {
+  font-size: 0.65rem;
+}
+
+// ANT Design Overrides
+.ant-modal-header {
+  // background-color: rgba(0,0,0,0.7);
+  // color: #fff;
+  // border-bottom: 1px solid rgba(0,0,0,0.9);
+  padding-bottom: 0px;
+}
+
+.ant-modal-title {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 900;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  margin-top: 10px;
+  line-height: 12px;
+}
+
+.ant-btn {
+  background-color: rgba(0,0,0,0.85);
+  color: $primaryColor;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-family: 'Lato', sans-serif;
+  font-size: 0.75rem;
+  // padding: 10px 15px;
+  border-radius: 5px;
+  &:hover {
+    background-color: $backgroundColor;
+    color: $accentColor;
+  }
+}

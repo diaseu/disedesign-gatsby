@@ -1,0 +1,55 @@
+@import "./variables";
+
+.mailcrypt:after {
+  content: attr(data-name) "@" attr(data-domain) "." attr(data-tld); 
+}
+
+.socialmedia {
+  width: 40px;
+  position: fixed;
+  bottom: 0px;
+  left: 40px;
+  right: auto;
+  z-index: 10;
+  fill: $primaryColor !important;
+  margin-bottom: 0;
+  ul {
+    display: flex;
+    flex-direction: column;
+    -webkit-box-align: center;
+    align-items: center;
+    margin: 0px!important;
+    padding: 0px;
+    list-style: none;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+    li {
+      display: list-item;
+      text-align: -webkit-match-parent;
+    }
+    a {
+      color: $primaryColor;
+      padding: 10px;
+      &:hover {
+        color: $accentColor;
+        // fill: $accentColor;
+        position: relative;
+        top: -2px;
+      }
+    }
+    &::after {
+      content: "";
+      display: block;
+      width: 1px;
+      height: 90px;
+      margin: 0px auto;
+      background-color: $primaryColor;
+    }
+  }
+  li:last-of-type {
+    margin-bottom: 20px;
+  }
+}

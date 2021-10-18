@@ -1,0 +1,24 @@
+@import "./variables";
+
+// Contact
+.contact {
+  max-width: 600px;
+  margin-left: 0;
+  li {
+    list-style: none;
+    // background: rgba(200,200,200,0.45);
+    color: $primaryColor;
+    // display: inline-block;
+    padding: 0px 15px;
+    text-transform: uppercase;
+    margin: 0;
+    font-size: 10px;
+    letter-spacing: 2px;
+    border-radius: 5px;
+    margin-left: 5px;
+  }
+}
+
+.icon {
+  margin-right: 20px;
+}
