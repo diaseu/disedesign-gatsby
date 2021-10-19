@@ -46,9 +46,10 @@
   }
   button.active {
     border-left: 2px solid $accentColor;
-    background-color: $accentColor2;
+    color: $accentColor2;
   }
   button:hover {
+    border-left: 2px solid $accentColor;
     border-left: $accentColor;
   }
 }

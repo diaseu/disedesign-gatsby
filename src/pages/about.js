@@ -4,7 +4,7 @@ import React, { useState } from "react"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 // Styles
-import { skills, toolcontainer, toollist, toolcontent, hidden } from '../styles/about.module.scss'
+import { skills, toolcontainer, toollist, toolcontent, hidden, active } from '../styles/about.module.scss'
 import '../styles/style.scss'
 
 const about = () => {
@@ -59,19 +59,46 @@ const about = () => {
 
         <div className={toolcontainer}>
           <div className={toollist}>
-            {tools.map(tool => (
+            <button
+              id="list-tech"
+              className={active}
+            // onclick={() => setShow(true)}
+            >
+              <span>{tools[0].name}</span></button>
+            <button
+              id="list-lib"
+            // onclick={() => setShow(true)}
+            >
+              <span>{tools[1].name}</span></button>
+            <button
+              id="list-plat"
+            // onclick={() => setShow(true)}
+            >
+              <span>{tools[2].name}</span></button>
+            <button
+              id="list-des"
+            // onclick={() => setShow(true)}
+            >
+              <span>{tools[3].name}</span></button>
+            <button
+              id="list-all"
+            // onclick={() => setShow(true)}
+            >
+              <span>See All</span></button>
+
+            {/* {tools.map(tool => (
               <button 
                 id={`list-${tool.id}`} 
                 // onclick={() => setShow(true)}
               >
                   <span>{tool.name}</span></button>
-            ))}
+            ))} */}
             {/* {tlist.map(tool => (
               <button id={`list-${tool.id}`}><span>{tool} + 1</span></button>
             ))} */}
           </div>
           <div className={toolcontent}>
-          {tools.map(tool => (
+          {/* {tools.map(tool => (
             <div id={`pane-${tool.id}`}
             //  className={hidden}
              >
@@ -81,7 +108,54 @@ const about = () => {
                   ))}
               </ul>
             </div>
-          ))}
+          ))} */}
+            <div id="pane-tech"
+            //  className={hidden}
+            >
+              <ul className={skills}>
+                {tools[0].items.map((item) => (
+                  <li>{item}</li>
+                ))}
+              </ul>
+            </div>
+
+            <div id="pane-lib"
+             className={hidden}
+            >
+              <ul className={skills}>
+                {tools[1].items.map((item) => (
+                  <li>{item}</li>
+                ))}
+              </ul>
+            </div>
+            <div id="pane-plat"
+             className={hidden}
+            >
+              <ul className={skills}>
+                {tools[2].items.map((item) => (
+                  <li>{item}</li>
+                ))}
+              </ul>
+            </div>
+            <div id="pane-des"
+             className={hidden}
+            >
+              <ul className={skills}>
+                {tools[3].items.map((item) => (
+                  <li>{item}</li>
+                ))}
+              </ul>
+            </div>
+            <div id="pane-all"
+             className={hidden}
+            >
+              <ul className={skills}>
+                {tools[4].items.map((item) => (
+                  <li>{item}</li>
+                ))}
+              </ul>
+            </div>
+
           </div>
         </div>
 

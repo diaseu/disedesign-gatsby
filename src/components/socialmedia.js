@@ -44,7 +44,7 @@ const Menu = () => {
 
         {/* Instagram */}
         <li>
-          <a href="https://www.instagram.com/slowpokie" aria-label="Instagram" target="_blank" rel="noreferrer">
+          <a href="https://www.instagram.com/theslowpokie" aria-label="Instagram" target="_blank" rel="noreferrer">
             <IconInstagram />
           </a>
         </li>
