@@ -7,7 +7,7 @@ import React from 'react'
 import { socialmedia, mailcrypt } from '../styles/socialmedia.module.scss'
 // Images
 import { ReactComponent as IconDiscord } from '../images/discord.svg'
-import { ReactComponent as IconGithub } from '../images/Github.svg'
+import { ReactComponent as IconGithub } from '../images/images/github.svg'
 import { ReactComponent as IconLinkedin } from '../images/LinkedIn.svg'
 import { ReactComponent as IconInstagram } from '../images/Instagram.svg'
 import { ReactComponent as IconEnvelope } from '../images/envelope.svg'
