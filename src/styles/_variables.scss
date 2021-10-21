@@ -3,6 +3,24 @@ $accentColor: rgb(23, 228, 255);
 $accentColor2: rgb(137, 201, 209);
 $backgroundColor: rgba(20,20,20,1);
 
+$breakpoints: (
+  'small':  ( min-width:  767px ),
+  'medium': ( min-width:  992px ),
+  'large':  ( min-width: 1200px )
+) !default;
+
+@mixin respond-to($breakpoint) {
+  @if map-has-key($breakpoints, $breakpoint) {
+    @media #{inspect(map-get($breakpoints, $breakpoint))} {
+      @content;
+    }
+  }
+  @else {
+    @warn "Unfortunately, no value could be retrieved from `#{$breakpoint}`. "
+        + "Available breakpoints are: #{map-keys($breakpoints)}.";
+  }
+}
+
 @mixin flexBetween {
   display: flex;
   justify-content: space-between;

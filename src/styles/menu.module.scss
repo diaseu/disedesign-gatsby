@@ -27,6 +27,12 @@ header {
     width: 50px;
     fill: #fff;
     font-size: 8px;
+    @include respond-to('small') {
+    display: none;
+    }
+    @include respond-to('medium') {
+    width: 100%;
+    }
   }
 }
 
