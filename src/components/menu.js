@@ -18,7 +18,7 @@ const Menu = () => {
           alt="Logo"
           // style={{ marginBottom: `1.45rem` }}
           /> */}
-          <img src='https://i.imgur.com/rB5TRvL.png' alt="Dise Design" style={{ maxWidth: '60px', paddingTop: '2vh' }} />
+          <img src='https://i.imgur.com/rB5TRvL.png' alt="Dise Design" className={navlogo} />
           {/* <Navlogo className={navlogo} style={{ fill: "#fff", marginLeft: '2vh' }} /> */}
         </Link>
      </div>

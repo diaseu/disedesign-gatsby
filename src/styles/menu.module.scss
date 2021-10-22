@@ -8,6 +8,9 @@ header {
   z-index: 11;
   padding: 0 50px;
   width: 100%;
+  @include breakpoint(tablet, max) {
+    padding: 0px;
+  }
 }
 
 .menu {
@@ -18,21 +21,23 @@ header {
 
 .logo {
   @include flexCenter();
-
+  display: block;
+  @include breakpoint(tablet, max) {
+    display: none;
+  }
+  @include breakpoint(tablet, min) {
+    // display: none;
+  }
   // fill: $accentColor;
   // svg {
   //   fill: $accentColor;
   // }
   .navlogo {
-    width: 50px;
+    max-width: 60px;
+    padding-top: 2vh;
     fill: #fff;
     font-size: 8px;
-    @include respond-to('small') {
     display: none;
-    }
-    @include respond-to('medium') {
-    width: 100%;
-    }
   }
 }
 
@@ -49,6 +54,9 @@ header {
   li {
     margin: 0px 15px;
     // color: $primaryColor;
+    @include breakpoint(tablet, max) {
+    margin: 0px 8px;
+    }
   }
   a {
     @include navLink();   
@@ -71,5 +79,8 @@ header {
     // background-color: rgba(200,200,200,0.85);
     color: $accentColor;
   }
+  @include breakpoint(tablet, max) {
+    margin: 0px 8px;
+    }
 }
 

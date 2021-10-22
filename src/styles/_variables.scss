@@ -4,20 +4,39 @@ $accentColor2: rgb(137, 201, 209);
 $backgroundColor: rgba(20,20,20,1);
 
 $breakpoints: (
-  'small':  ( min-width:  767px ),
-  'medium': ( min-width:  992px ),
-  'large':  ( min-width: 1200px )
-) !default;
+  mobile: 480px,
+  tablet: 768px,
+  laptop: 1240px,
+  desktop-lg: 1800px
+);
 
-@mixin respond-to($breakpoint) {
+@mixin breakpoint($breakpoint, $direction) {
   @if map-has-key($breakpoints, $breakpoint) {
-    @media #{inspect(map-get($breakpoints, $breakpoint))} {
-      @content;
-    }
-  }
-  @else {
-    @warn "Unfortunately, no value could be retrieved from `#{$breakpoint}`. "
-        + "Available breakpoints are: #{map-keys($breakpoints)}.";
+
+    // Get the breakpoint value.
+    $breakpoint-value: map-get($breakpoints, $breakpoint);
+    
+    @if $direction == max {
+      @media (max-width: ($breakpoint-value - 1)) {
+        @content;
+      }
+    } @else if $direction == min {      
+      @media (min-width: $breakpoint-value) {
+        @content;
+      }
+    } 
+  
+  // If the breakpoint doesn't exist in the map.
+  } @else {
+    @if $direction == max {
+      @media (max-width: $breakpoint) {
+        @content;
+      }
+    } @else if $direction == min {      
+      @media (min-width: $breakpoint) {
+        @content;
+      }
+    }  
   }
 }
 

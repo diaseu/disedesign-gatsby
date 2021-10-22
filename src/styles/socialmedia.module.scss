@@ -13,7 +13,16 @@
   z-index: 10;
   fill: $primaryColor !important;
   margin-bottom: 0;
-  ul {
+  @include breakpoint(tablet, max) {
+    left: 0;
+    background-color: $backgroundColor;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    // padding-top: text-display: flex
+  }
+    ul {
     display: flex;
     flex-direction: column;
     -webkit-box-align: center;
@@ -21,17 +30,26 @@
     margin: 0px!important;
     padding: 0px;
     list-style: none;
+    @include breakpoint(tablet, max) {
+    flex-direction: row;
+
+    }
+    @include breakpoint(laptop, min) {
+    flex-direction: column;
     margin-block-start: 1em;
     margin-block-end: 1em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
     padding-inline-start: 40px;
-    @include respond-to('small') {
-    flex-direction: row;
+    &::after {
+      content: "";
+      display: block;
+      width: 1px;
+      height: 90px;
+      margin: 0px auto;
+      background-color: $primaryColor;
     }
-    @include respond-to('medium') {
-    flex-direction: row;
-    }
+  }
     li {
       display: list-item;
       text-align: -webkit-match-parent;
@@ -46,14 +64,7 @@
         top: -2px;
       }
     }
-    &::after {
-      content: "";
-      display: block;
-      width: 1px;
-      height: 90px;
-      margin: 0px auto;
-      background-color: $primaryColor;
-    }
+    
   }
   li:last-of-type {
     margin-bottom: 20px;
