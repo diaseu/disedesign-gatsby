@@ -23,7 +23,7 @@ const Portfolio = () => {
       url: "https://www.disedesign.com",
       git: "https://github.com/diaseu/disedesign-gatsby",
       img: "https://i.imgur.com/ClXP6wG.png",
-      technology: ["Javascript", "React.JS", "Node.JS", "Ant Design"]
+      technology: ["Javascript", "React.JS", "Node.JS", "Gatsby",  "SASS"]
     },
     {
       id: 1,
