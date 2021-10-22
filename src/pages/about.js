@@ -52,10 +52,8 @@ const about = () => {
       <Seo title="About" />
       <section>
         <h2><small>About Me</small><br />Who is Dia?</h2>
-        <p>Hi, my name is Dia (short for Diana, but pronounced <a href="https://youtu.be/Nv6rM33lKxM?t=4" target="_blank" rel="noreferrer">d EE uh</a>). I get excited designing and building awesome digital experiences through web apps. </p>
-        <p>My coding journey started when I was 12, self-studying HTML books to create my own first geocities sites and finding awesome websites to study under the hood and emulate. Discovering cool new tricks that people have utilized for digital experiences really excited me and I'd enjoy trying to reverse engineer how they make it work. After trying to follow my veterinary father's footsteps, I had a revelation during the pandemic that life really is too short to waste time not pursue what truly gets me excited. That led me head-first into a full-stack web development program at UC Irvine.  Now I'm looking to grow my roots as a full-stack capable front-end developer. </p>
-
-        <p>My daily drive is finding out and learning inspiring design, tools and code to elevate my own work. Currently looking to grow with likeminded people.</p>
+        <p>Hi, my name is Dia (short for Diana, but pronounced <a href="https://youtu.be/Nv6rM33lKxM?t=4" target="_blank" rel="noreferrer">d EE uh</a>). My designing and building awesome digital experiences new web apps. </p>
+        <p>A pandemic-induced revelation led me to a certified full-stack web development program at UC Irvine. Learning and developing myself as a developer has been an exciting journey and I'm looking to grow my roots further as a full-stack capable front-end developer. </p>My daily drive is finding out and learning new design, tools and skills to elevate my own work. Currently looking to grow with likeminded people.</p>
 
         <div className={toolcontainer}>
           <div className={toollist}>
