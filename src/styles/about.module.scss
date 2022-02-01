@@ -2,9 +2,19 @@
 
 // About
 
+.me {
+  display: flex;
+  flex-direction: row;
+  img {
+    border-radius: 50%;
+    max-width: 100px;
+    margin-right: 5vh;
+  }
+}
+
 .skills {
   max-width: 600px;
-  margin-left: 0;
+  margin-left: 5vh;
   li {
     list-style: none;
     background: rgba(200,200,200,0.45);
@@ -21,9 +31,43 @@
 
 .toolcontainer {
   display: flex;
+  flex-direction: column;
+  .toolpanel {
+    display: flex;
+    flex-direction: row;
+    button {
+      @include navLink();
+      font-size: 14px;
+      height: 30px;
+      border-right: 2px solid $accentColor2;
+      background-color: transparent;
+      text-decoration: none;
+      position: relative;
+      display: flex;
+      width: 100%;
+      padding: 0 20px 20px;
+      text-align: left;
+      white-space: nowrap;
+      width: 25vh;
+      padding: 0 5vh;
+      margin: 0vh;
+      list-style: none;
+    }
+    button.active {
+      border-left: 2px solid $accentColor;
+      color: $accentColor2;
+    }
+    button:hover {
+      border-left: 2px solid $accentColor;
+      border-left: $accentColor;
+    }
+  }
 }
 
+
 .toollist {
+  display: flex;
+  flex-direction: row;
   position: relative;
   z-index: 3;
   width: max-content;
