@@ -13,12 +13,12 @@ const about = () => {
     {
       id: "Tech",
       name: "Technology",
-      items: ['Javascript (ES6)', 'CSS/SASS', 'GraphQL', 'MongoDB', 'MySQL', 'HTML', 'Typescript'],
+      items: ['JavaScript (ES6)', 'SASS', 'MongoDB', 'MySQL', 'HTML', 'CSS'],
     },
     {
       id: "Lib",
       name: "Libraries",
-      items: ['jQuery', 'React', 'Vue', 'Node.JS', 'Express', 'Gatsby', 'Passport'],
+      items: ['jQuery', 'React', 'Vue', 'Node.JS', 'Express', 'Gatsby'],
     },
     {
       id: "Plat",
