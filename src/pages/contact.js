@@ -51,8 +51,8 @@ const Contact = () => {
     },
     {
       Name: "Discord",
-      Info: "Discord",
-      Link: "https://discord.gg/g93F48jcjP",
+      Info: "Add Dia#1125",
+      Link: "https://discord.gg/ngqnEbQBb5",
       Icon: "<IconDiscord className='icon' />",
     },
   ]
