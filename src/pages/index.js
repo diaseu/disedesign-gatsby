@@ -9,20 +9,12 @@ import '../styles/style.scss'
 const IndexPage = () => (
   <Layout>
     <Seo title="Home" />
-    <section>
-      <h1><small>Hi, I'm</small><br />Dia Seung</h1>
-      <h3>I design and build digital products.</h3>
-      <p>Full-stack developer with an passion for building better exceptional digital experiences. My daily drive is learning new ways to accomplish this. Currently looking to grow with likeminded people.</p>
-      {/* <StaticImage
-        src="../images/gatsby-astronaut.png"
-        width={300}
-        quality={95}
-        formats={["auto", "webp", "avif"]}
-        alt="A Gatsby astronaut"
-        style={{ marginBottom: `1.45rem` }}
-      /> */}
-
-    </section>
+    <Grid columns={4} style={{ gridColumnGap: "32px", marginBottom: 100 }}>
+      {/* <h1><small>Hi, I'm</small><br />Dia Seung</h1> */}
+      <Link to='/about'>
+          <img src="https://i.imgur.com/rB5TRvL.png" alt="" className="home-logo" />
+        </Link>
+    </Grid>
   </Layout>
 )
 

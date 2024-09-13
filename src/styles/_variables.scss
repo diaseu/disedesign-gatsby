@@ -1,6 +1,6 @@
 $primaryColor: #fff;
-$accentColor: rgb(23, 228, 255);
-$accentColor2: rgb(137, 201, 209);
+$accentColor: rgb(43, 165, 11);
+$accentColor2: rgb(0, 60, 255);
 $backgroundColor: rgba(20,20,20,1);
 
 $breakpoints: (
@@ -54,7 +54,7 @@ $breakpoints: (
 @mixin navLink {
   color: $primaryColor; 
   font-size: 13px;
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Futura', sans-serif;
   font-weight: 600;
   letter-spacing: 1px;
   text-transform: uppercase;
@@ -62,7 +62,7 @@ $breakpoints: (
 
 @mixin heading {
   color: $accentColor;
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Futura', sans-serif;
   text-transform: uppercase;
   margin-left: -3rem;
 }

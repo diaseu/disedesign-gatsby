@@ -42,21 +42,6 @@ const Menu = () => {
           </a>
         </li>
 
-        {/* Instagram */}
-        <li>
-          <a href="https://www.instagram.com/theslowpokie" aria-label="Instagram" target="_blank" rel="noreferrer">
-            <IconInstagram />
-          </a>
-        </li>
-
-        {/* Discord */}
-        <li>
-          <a href="https://discord.gg/rfB2UJ3M" aria-label="Twitter" target="_blank" rel="noreferrer">
-            <IconDiscord/>
-          </a>
-        </li>
-
-
       </ul>
     </div>
   )

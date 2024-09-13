@@ -3,6 +3,7 @@ import React, { useState } from "react"
 // Components
 import Layout from "../components/layout"
 import Seo from "../components/seo"
+import Grid from "../components/Grid"
 // Styles
 import { me, skills, toolcontainer, toollist, toolpanel, toolcontent, hidden, active } from '../styles/about.module.scss'
 import '../styles/style.scss'
@@ -12,62 +13,36 @@ const about = () => {
   const tools = [
     {
       id: "Tech",
-      name: "Technology",
-      items: ['JavaScript (ES6)', 'SASS', 'MongoDB', 'MySQL', 'HTML', 'CSS'],
+      name: "Technical Skills",
+      items: ['Bash', 'Java', 'JavaScript', 'SASS', 'MySQL', 'MongoDB', 'jQuery', 'React', 'Vue', 'Docker', 'Git', 'Heroku', 'Netlify', 'Jenkins'],
     },
     {
       id: "Lib",
-      name: "Libraries",
-      items: ['jQuery', 'React', 'Vue', 'Node.JS', 'Express', 'Gatsby'],
+      name: "Soft Skills",
+      items: [],
     },
     {
       id: "Plat",
-      name: "Tools",
-      items: ['Git', 'Heroku', 'Netlify', 'Wordpress', 'Docker'],
-    },
-    {
-      id: "Des", 
-      name: "Design",
-      items: ['InDesign', 'InVision', 'Sketch', 'Illustrator'],
-    },
+      name: "Hobbies",
+      items: ['Custom Keyboards', 'Coffee', 'Hydroponic Gardening', 'Woodworking', 'DIY Home Projects', '3D Printing'],
+    }
   ]
 
-  // function openPane(e) {
-  //   e.preventDefault();
-
-  // }
-
-  // const [show, setShow] = useState();
-
-
-  
 
   return (
     <Layout>
       <Seo title="About" />
       <section>
+        <Grid columns={4} style={{ gridColumnGap: "32px", marginBottom: 100 }}>
         <h2>
-          <small>About Me</small>
+          <small>Hello</small>
           <br />
-          Who is Dia?
+          I'm Dia
         </h2>
         <div className={me}>
           <img src="https://i.imgur.com/FFqC5NX.jpeg" alt="Dia Seu" />
           <p>
-            Hi, my name is Dia (pronounced{" "}
-            <a
-              href="https://youtu.be/Nv6rM33lKxM?t=4"
-              target="_blank"
-              rel="noreferrer"
-            >
-              d EE uh
-            </a>
-            ). Learning and developing myself as a developer has been an
-            exciting journey and I'm looking to grow my roots further as a
-            full-stack capable front-end developer. My daily drive is finding
-            out and learning new design, tools and skills to elevate my own
-            work. Currently looking to grow with likeminded people.
-          </p>
+            I'm a Customer Support Engineer at Liferay, Inc, helping enterprise customers with troubleshooting complex software issues. Seeking to leverage strong problem-solving, critical thinking and analytical skills to transition into a Full-Stack Software Engineer role, where I can contribute to the develoipment and improvement of innovative software solutions.
         </div>
 
         <div className={toolcontainer}>
@@ -88,49 +63,7 @@ const about = () => {
           ))}
         </div>
 
-        {/* <h4>Technology</h4>
-        <ul 
-          className={skills}
-        >
-          <li>Javascript (ES6)</li>
-          <li>CSS/SASS</li>
-          <li>GraphQL</li>
-          <li>MongoDB</li>
-          <li>(My)SQL</li>
-          <li>Express</li>
-          <li>HTML</li>
-          <li>TypeScript</li>
-        </ul>
-        <h4>Libraries / Frameworks</h4>
-        <ul
-          className={skills}
-        >
-          <li>jQuery</li>
-          <li>Node.JS</li>
-          <li>Express.JS</li>
-          <li>React</li>
-          <li>Gatsby</li>
-          <li>Passport</li>
-          <li>Sequelize</li>
-        </ul>
-        <h4>Tools / Platforms</h4>
-        <ul
-          className={skills}
-        >
-          <li>Git</li>
-          <li>Heroku</li>
-          <li>Netlify</li>
-          <li>Wordpress</li>
-        </ul>
-        <h4>Design</h4>
-        <ul
-          className={skills}
-        >
-          <li>InDesign</li>
-          <li>InVision</li>
-          <li>Sketch</li>
-          <li>Illustrator</li>
-        </ul> */}
+        </Grid>
       </section>
     </Layout>
   )

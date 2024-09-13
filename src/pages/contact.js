@@ -33,8 +33,8 @@ const Contact = () => {
     },
     {
       Name: "Email",
-      Info: "hello@disedesign.com",
-      Link: "mailto: hello@disedesign.com?Subject=Dise Design",
+      Info: "hello@dianaseung.com",
+      Link: "mailto: hello@dianaseung.com",
       Icon: "<IconEmail className='icon' />",
     },
     {
@@ -48,13 +48,7 @@ const Contact = () => {
       Info: "linkedin.com/in/diaseu",
       Link: "https://www.linkedin.com/in/diaseu",
       Icon: "<IconLinkedin className='icon' />",
-    },
-    {
-      Name: "Discord",
-      Info: "Add Dia#1125",
-      Link: "https://discord.gg/ngqnEbQBb5",
-      Icon: "<IconDiscord className='icon' />",
-    },
+    }
   ]
 
   // const DiscordIcon = props => <Icon component={PandaSvg} {...props} />;
@@ -64,9 +58,9 @@ const Contact = () => {
       <Seo title="Contact" />
       <section>
         <h1>
-          <small>Let's make magic</small>
+          <small>Hello</small>
           <br />
-          Contact Me
+          Reach Me at
         </h1>
         <p>
           
